@@ -417,8 +417,8 @@ const Navbar = () => {
           <Link to="/products?category=Groceries" className="nav-bottom-link">Groceries</Link>
           <Link to="/products?category=Toys" className="nav-bottom-link">Toys</Link>
           <Link to="/products?category=Gaming" className="nav-bottom-link">Gaming</Link>
-          <a href="http://localhost:3002/login" target="_blank" rel="noreferrer" className="nav-bottom-link nav-sell">Become a Seller</a>
-          <a href="http://localhost:3002/login" target="_blank" rel="noreferrer" className="nav-bottom-link" style={{color:'#ff9900', fontWeight:700}}>Sell on ShopZone</a>
+          <a href="https://shopzon-vendor-dashboard.vercel.app/login" target="_blank" rel="noreferrer" className="nav-bottom-link nav-sell">Become a Seller</a>
+          <a href="https://shopzon-vendor-dashboard.vercel.app/login" target="_blank" rel="noreferrer" className="nav-bottom-link" style={{color:'#ff9900', fontWeight:700}}>Sell on ShopZone</a>
         </div>
       </nav>
     </header>

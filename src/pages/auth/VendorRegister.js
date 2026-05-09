@@ -36,7 +36,7 @@ const VendorRegister = () => {
             <strong>Please complete KYC verification to activate your account and start selling.</strong>
           </p>
           <a 
-            href="http://localhost:3001/login" 
+            href="https://shopzon-vendor-dashboard.vercel.app/login" 
             className="btn btn-primary btn-lg" 
             style={{ textDecoration: 'none', display: 'inline-block', backgroundColor: '#f3a847', color: '#111', padding: '12px 30px', borderRadius: '8px', fontWeight: 'bold' }}
           >
@@ -83,7 +83,7 @@ const VendorRegister = () => {
         </form>
         
         <p className="auth-switch" style={{ marginTop: '2rem' }}>
-          Already have a seller account? <a href="http://localhost:3001/login">Sign in to Hub</a>
+          Already have a seller account? <a href="https://shopzon-vendor-dashboard.vercel.app/login">Sign in to Hub</a>
         </p>
       </div>
     </div>

@@ -67,7 +67,8 @@ const Home = () => {
   const trending = [...safeItems].sort((a, b) => (b.totalReviews || 0) - (a.totalReviews || 0)).slice(0, 8);
 
   useEffect(() => {
-    fetch('http://localhost:5000/api/banners')
+    const apiBase = process.env.REACT_APP_API_URL || 'http://localhost:5000/api';
+    fetch(`${apiBase}/banners`)
       .then(res => res.json())
       .then(data => {
         if (data && data.success && Array.isArray(data.banners)) {
@@ -224,7 +225,7 @@ const Home = () => {
           <div className="sell-banner-content">
             <h2 style={{color: '#ff9900', fontSize: 28, marginBottom: 8}}>Become a ShopZone Seller</h2>
             <p style={{color: '#ccc', marginBottom: 20}}>Reach millions of customers and grow your business across India.</p>
-            <a href="http://localhost:3001/register" target="_blank" rel="noreferrer" className="sell-banner-btn" style={{background: '#ff9900', color: '#131921', padding: '12px 28px', borderRadius: 4, fontWeight: 700, textDecoration: 'none', display: 'inline-block'}}>Start Selling Today →</a>
+            <a href="https://shopzon-vendor-dashboard.vercel.app/register" target="_blank" rel="noreferrer" className="sell-banner-btn" style={{background: '#ff9900', color: '#131921', padding: '12px 28px', borderRadius: 4, fontWeight: 700, textDecoration: 'none', display: 'inline-block'}}>Start Selling Today →</a>
           </div>
           <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=500&h=300&fit=crop&auto=format" alt="Sell" style={{width: 300, height: 180, objectFit: 'cover', borderRadius: 6}} />
         </section>

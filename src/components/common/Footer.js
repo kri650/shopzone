@@ -18,7 +18,7 @@ const Footer = () => (
       </div>
       <div className="footer-col">
         <h4>Make Money with Us</h4>
-        <a href="http://localhost:3001/register" target="_blank" rel="noreferrer">Sell on ShopZone</a>
+        <a href="https://shopzon-vendor-dashboard.vercel.app/register" target="_blank" rel="noreferrer">Sell on ShopZone</a>
         <Link to="/vendor-register">Become a Vendor (Mock)</Link>
         <Link to="#">Become an Affiliate</Link>
         <Link to="#">Advertise Your Products</Link>
