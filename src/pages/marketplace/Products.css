@@ -1,0 +1,33 @@
+.products-page { display: flex; gap: 20px; padding: 16px; align-items: flex-start; }
+
+.sidebar { width: 220px; flex-shrink: 0; }
+.sidebar-section { background: white; border-radius: 6px; padding: 14px; margin-bottom: 12px; box-shadow: 0 1px 4px rgba(0,0,0,0.06); }
+.sidebar-section h3 { font-size: 15px; font-weight: 700; margin-bottom: 10px; padding-bottom: 8px; border-bottom: 1px solid #eee; }
+.sidebar-list { list-style: none; }
+.sidebar-list li { font-size: 13px; padding: 5px 6px; cursor: pointer; border-radius: 3px; color: #007185; }
+.sidebar-list li:hover { background: #f7f7f7; color: #c7511f; }
+.sidebar-list li.active { font-weight: 700; color: #c7511f; }
+.sidebar-radio { display: flex; align-items: center; gap: 6px; font-size: 13px; margin-bottom: 6px; cursor: pointer; }
+.sidebar-check { display: flex; align-items: center; gap: 6px; font-size: 13px; cursor: pointer; }
+.price-inputs { display: flex; align-items: center; gap: 8px; }
+.price-inputs input { width: 80px; padding: 5px 8px; border: 1px solid #aaa; border-radius: 4px; font-size: 13px; }
+
+.products-main { flex: 1; min-width: 0; }
+.products-topbar { background: #f7f8f8; border: 1px solid #ddd; border-radius: 4px; padding: 10px 14px; display: flex; justify-content: space-between; align-items: center; margin-bottom: 14px; }
+.results-info { font-size: 14px; color: #565959; }
+.sort-bar { display: flex; align-items: center; gap: 8px; font-size: 13px; }
+.sort-bar select { padding: 5px 10px; border: 1px solid #aaa; border-radius: 4px; font-size: 13px; background: white; }
+
+.products-grid-4 { display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; }
+
+.no-results { text-align: center; padding: 60px 20px; }
+.no-results svg { margin-bottom: 16px; }
+.no-results h3 { font-size: 20px; color: #565959; margin-bottom: 8px; }
+.no-results p { color: #888; }
+
+@media (max-width: 1100px) { .products-grid-4 { grid-template-columns: repeat(3, 1fr); } }
+@media (max-width: 768px) {
+  .products-page { flex-direction: column; }
+  .sidebar { width: 100%; }
+  .products-grid-4 { grid-template-columns: repeat(2, 1fr); }
+}

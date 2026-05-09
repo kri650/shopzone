@@ -1,0 +1,24 @@
+.warehouse-dashboard { padding: 20px; background: var(--dash-bg); min-height: calc(100vh - 120px); }
+.dashboard-header h1 { font-size: 24px; font-weight: 700; margin-bottom: 20px; }
+
+.stats-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; margin-bottom: 24px; }
+.stat-card { background: var(--dash-card); border-radius: 6px; padding: 20px; border: 1px solid var(--border); }
+.stat-card h3 { font-size: 13px; color: var(--text-secondary); margin-bottom: 8px; }
+.stat-value { font-size: 24px; font-weight: 700; color: var(--text-primary); }
+
+.dashboard-content { display: flex; flex-direction: column; gap: 20px; }
+.dashboard-section h2 { font-size: 18px; font-weight: 700; margin-bottom: 12px; }
+
+.data-table { width: 100%; background: white; border-radius: 6px; border: 1px solid var(--border); overflow: hidden; }
+.data-table th, .data-table td { padding: 12px; text-align: left; border-bottom: 1px solid var(--border); font-size: 13px; }
+.data-table th { background: #f7f8f8; font-weight: 600; }
+.status { padding: 4px 8px; border-radius: 4px; font-size: 11px; font-weight: 600; }
+.status.delivered { background: #e3f9e5; color: var(--green); }
+.status.in_transit { background: #e7f5ff; color: #0066c0; }
+.status.packed { background: #fff3e0; color: #ff9900; }
+.status.received { background: #f5f5f5; color: var(--text-secondary); }
+.status.pending { background: #f5f5f5; color: var(--text-secondary); }
+
+@media (max-width: 1100px) {
+  .stats-grid { grid-template-columns: repeat(2, 1fr); }
+}

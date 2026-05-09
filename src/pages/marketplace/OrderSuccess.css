@@ -1,0 +1,73 @@
+/* Order Success Page - Professional Clean Styling */
+
+.order-success-page {
+  padding: 60px 16px;
+  display: flex;
+  justify-content: center;
+  background: var(--bg-light);
+  min-height: 80vh;
+}
+
+.success-card {
+  background: var(--white);
+  border-radius: 8px;
+  padding: 40px;
+  text-align: center;
+  max-width: 500px;
+  border: 1px solid var(--border);
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
+}
+
+.success-icon {
+  width: 60px;
+  height: 60px;
+  background: var(--green);
+  color: var(--white);
+  font-size: 36px;
+  font-weight: 700;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 20px;
+}
+
+.success-card h1 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: var(--text-primary);
+}
+
+.order-number {
+  font-size: 16px;
+  color: var(--text-secondary);
+  margin-bottom: 16px;
+}
+
+.success-message {
+  color: var(--text-secondary);
+  margin-bottom: 24px;
+  line-height: 1.5;
+}
+
+.success-actions {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .order-success-page {
+    padding: 40px 12px;
+  }
+  
+  .success-card {
+    padding: 30px 20px;
+  }
+  
+  .success-card h1 {
+    font-size: 20px;
+  }
+}

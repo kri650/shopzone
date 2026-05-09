@@ -1,0 +1,174 @@
+nohup: ignoring input
+
+> shopzone-frontend@1.0.0 start
+> react-scripts start
+
+(node:397092) [DEP_WEBPACK_DEV_SERVER_ON_AFTER_SETUP_MIDDLEWARE] DeprecationWarning: 'onAfterSetupMiddleware' option is deprecated. Please use the 'setupMiddlewares' option.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+(node:397092) [DEP_WEBPACK_DEV_SERVER_ON_BEFORE_SETUP_MIDDLEWARE] DeprecationWarning: 'onBeforeSetupMiddleware' option is deprecated. Please use the 'setupMiddlewares' option.
+Starting the development server...
+
+Compiled successfully!
+
+You can now view shopzone-frontend in the browser.
+
+  Local:            http://localhost:3000
+  On Your Network:  http://172.18.18.36:3000
+
+Note that the development build is not optimized.
+To create a production build, use npm run build.
+
+webpack compiled successfully
+Compiling...
+Compiled successfully!
+webpack compiled successfully
+Compiling...
+Compiled successfully!
+webpack compiled successfully
+Compiling...
+Compiled successfully!
+webpack compiled successfully
+Compiling...
+Compiled successfully!
+webpack compiled successfully
+Compiling...
+Compiled successfully!
+webpack compiled successfully
+Compiling...
+Compiled successfully!
+webpack compiled successfully
+Compiling...
+Failed to compile.
+
+[eslint] 
+src/pages/marketplace/Cart.js
+Syntax error: Unterminated JSX contents. (42:68) (42:68)
+ERROR in ./src/pages/marketplace/Cart.js
+Module build failed (from ./node_modules/babel-loader/lib/index.js):
+SyntaxError: /home/sama/demo/shopzone/src/pages/marketplace/Cart.js: Unterminated JSX contents. (42:68)
+
+  40 |                 <Link to={`/products/${item._id}`} className="cart-item-name">{item.name}</Link>
+  41 |                 <p className="cart-item-brand">{item.brand}</p>
+> 42 |                 <p className="cart-item-price">{fmt(item.price)}</p>
+     |                                                                     ^
+  43 |
+    at constructor (/home/sama/demo/shopzone/node_modules/@babel/parser/lib/index.js:365:19)
+    at FlowParserMixin.raise (/home/sama/demo/shopzone/node_modules/@babel/parser/lib/index.js:6616:19)
+    at FlowParserMixin.jsxReadToken (/home/sama/demo/shopzone/node_modules/@babel/parser/lib/index.js:4460:20)
+    at FlowParserMixin.getTokenFromCode (/home/sama/demo/shopzone/node_modules/@babel/parser/lib/index.js:4786:12)
+    at FlowParserMixin.getTokenFromCode (/home/sama/demo/shopzone/node_modules/@babel/parser/lib/index.js:3209:13)
+    at FlowParserMixin.nextToken (/home/sama/demo/shopzone/node_modules/@babel/parser/lib/index.js:5799:10)
+    at FlowParserMixin.next (/home/sama/demo/shopzone/node_modules/@babel/parser/lib/index.js:5709:10)
+    at FlowParserMixin.eat (/home/sama/demo/shopzone/node_modules/@babel/parser/lib/index.js:5713:12)
+    at FlowParserMixin.expect (/home/sama/demo/shopzone/node_modules/@babel/parser/lib/index.js:6915:15)
+    at FlowParserMixin.jsxParseClosingElementAt (/home/sama/demo/shopzone/node_modules/@babel/parser/lib/index.js:4692:10)
+    at FlowParserMixin.jsxParseElementAt (/home/sama/demo/shopzone/node_modules/@babel/parser/lib/index.js:4707:37)
+    at FlowParserMixin.jsxParseElementAt (/home/sama/demo/shopzone/node_modules/@babel/parser/lib/index.js:4710:32)
+    at FlowParserMixin.jsxParseElementAt (/home/sama/demo/shopzone/node_modules/@babel/parser/lib/index.js:4710:32)
+    at FlowParserMixin.jsxParseElement (/home/sama/demo/shopzone/node_modules/@babel/parser/lib/index.js:4761:17)
+    at FlowParserMixin.parseExprAtom (/home/sama/demo/shopzone/node_modules/@babel/parser/lib/index.js:4771:19)
+    at FlowParserMixin.parseExprSubscripts (/home/sama/demo/shopzone/node_modules/@babel/parser/lib/index.js:11098:23)
+    at FlowParserMixin.parseUpdate (/home/sama/demo/shopzone/node_modules/@babel/parser/lib/index.js:11083:21)
+    at FlowParserMixin.parseMaybeUnary (/home/sama/demo/shopzone/node_modules/@babel/parser/lib/index.js:11063:23)
+    at FlowParserMixin.parseMaybeUnaryOrPrivate (/home/sama/demo/shopzone/node_modules/@babel/parser/lib/index.js:10916:61)
+    at FlowParserMixin.parseExprOps (/home/sama/demo/shopzone/node_modules/@babel/parser/lib/index.js:10921:23)
+    at FlowParserMixin.parseMaybeConditional (/home/sama/demo/shopzone/node_modules/@babel/parser/lib/index.js:10898:23)
+    at FlowParserMixin.parseMaybeAssign (/home/sama/demo/shopzone/node_modules/@babel/parser/lib/index.js:10848:21)
+    at /home/sama/demo/shopzone/node_modules/@babel/parser/lib/index.js:3510:39
+    at FlowParserMixin.tryParse (/home/sama/demo/shopzone/node_modules/@babel/parser/lib/index.js:6924:20)
+    at FlowParserMixin.parseMaybeAssign (/home/sama/demo/shopzone/node_modules/@babel/parser/lib/index.js:3510:18)
+    at /home/sama/demo/shopzone/node_modules/@babel/parser/lib/index.js:10817:39
+    at FlowParserMixin.allowInAnd (/home/sama/demo/shopzone/node_modules/@babel/parser/lib/index.js:12443:12)
+    at FlowParserMixin.parseMaybeAssignAllowIn (/home/sama/demo/shopzone/node_modules/@babel/parser/lib/index.js:10817:17)
+    at FlowParserMixin.parseMaybeAssignAllowInOrVoidPattern (/home/sama/demo/shopzone/node_modules/@babel/parser/lib/index.js:12510:17)
+    at FlowParserMixin.parseParenAndDistinguishExpression (/home/sama/demo/shopzone/node_modules/@babel/parser/lib/index.js:11692:28)
+    at FlowParserMixin.parseParenAndDistinguishExpression (/home/sama/demo/shopzone/node_modules/@babel/parser/lib/index.js:3603:18)
+    at FlowParserMixin.parseExprAtom (/home/sama/demo/shopzone/node_modules/@babel/parser/lib/index.js:11348:23)
+    at FlowParserMixin.parseExprAtom (/home/sama/demo/shopzone/node_modules/@babel/parser/lib/index.js:4776:20)
+    at FlowParserMixin.parseExprSubscripts (/home/sama/demo/shopzone/node_modules/@babel/parser/lib/index.js:11098:23)
+    at FlowParserMixin.parseUpdate (/home/sama/demo/shopzone/node_modules/@babel/parser/lib/index.js:11083:21)
+    at FlowParserMixin.parseMaybeUnary (/home/sama/demo/shopzone/node_modules/@babel/parser/lib/index.js:11063:23)
+    at FlowParserMixin.parseMaybeUnaryOrPrivate (/home/sama/demo/shopzone/node_modules/@babel/parser/lib/index.js:10916:61)
+    at FlowParserMixin.parseExprOps (/home/sama/demo/shopzone/node_modules/@babel/parser/lib/index.js:10921:23)
+    at FlowParserMixin.parseMaybeConditional (/home/sama/demo/shopzone/node_modules/@babel/parser/lib/index.js:10898:23)
+    at FlowParserMixin.parseMaybeAssign (/home/sama/demo/shopzone/node_modules/@babel/parser/lib/index.js:10848:21)
+    at FlowParserMixin.parseMaybeAssign (/home/sama/demo/shopzone/node_modules/@babel/parser/lib/index.js:3561:18)
+    at FlowParserMixin.parseFunctionBody (/home/sama/demo/shopzone/node_modules/@babel/parser/lib/index.js:12110:24)
+    at /home/sama/demo/shopzone/node_modules/@babel/parser/lib/index.js:2904:63
+    at FlowParserMixin.forwardNoArrowParamsConversionAt (/home/sama/demo/shopzone/node_modules/@babel/parser/lib/index.js:3080:16)
+    at FlowParserMixin.parseFunctionBody (/home/sama/demo/shopzone/node_modules/@babel/parser/lib/index.js:2904:12)
+    at FlowParserMixin.parseArrowExpression (/home/sama/demo/shopzone/node_modules/@babel/parser/lib/index.js:12092:10)
+    at FlowParserMixin.parseExprAtom (/home/sama/demo/shopzone/node_modules/@babel/parser/lib/index.js:11455:25)
+    at FlowParserMixin.parseExprAtom (/home/sama/demo/shopzone/node_modules/@babel/parser/lib/index.js:4776:20)
+    at FlowParserMixin.parseExprSubscripts (/home/sama/demo/shopzone/node_modules/@babel/parser/lib/index.js:11098:23)
+    at FlowParserMixin.parseUpdate (/home/sama/demo/shopzone/node_modules/@babel/parser/lib/index.js:11083:21)
+
+ERROR in [eslint] 
+src/pages/marketplace/Cart.js
+  Line 42:68:  Parsing error: Unterminated JSX contents. (42:68)
+
+webpack compiled with 2 errors
+Compiling...
+Compiled successfully!
+webpack compiled successfully
+Compiling...
+Compiled successfully!
+webpack compiled successfully
+Compiling...
+Compiled successfully!
+webpack compiled successfully
+Compiling...
+Compiled successfully!
+webpack compiled successfully
+Compiling...
+Compiled successfully!
+webpack compiled successfully
+Compiling...
+Compiled successfully!
+webpack compiled successfully
+Compiling...
+Compiled successfully!
+webpack compiled successfully
+Compiling...
+Compiled successfully!
+webpack compiled successfully
+Compiling...
+Compiled successfully!
+webpack compiled successfully
+Compiling...
+Compiled successfully!
+webpack compiled successfully
+Compiling...
+Compiled successfully!
+webpack compiled successfully
+Compiling...
+Compiled successfully!
+webpack compiled successfully
+Compiling...
+Compiled successfully!
+webpack compiled successfully
+Compiling...
+Compiled successfully!
+webpack compiled successfully
+Compiling...
+Compiled successfully!
+webpack compiled successfully
+Compiling...
+Compiled successfully!
+webpack compiled successfully
+Compiling...
+Compiled successfully!
+webpack compiled successfully
+Compiling...
+Compiled successfully!
+webpack compiled successfully
+Compiling...
+Compiled successfully!
+webpack compiled successfully
+Compiling...
+Compiled successfully!
+webpack compiled successfully
+Compiling...
+Compiled successfully!
+webpack compiled successfully
+Compiling...

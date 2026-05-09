@@ -1,0 +1,1 @@
+export { useCart as default } from '../context/CartContext';

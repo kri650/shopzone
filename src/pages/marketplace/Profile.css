@@ -1,0 +1,278 @@
+/* Profile Page - Professional Clean Styling */
+
+.profile-page {
+  padding: 32px 16px;
+  background: var(--bg-light);
+  min-height: 80vh;
+}
+
+.profile-page h1 {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 24px;
+  color: var(--text-primary);
+  letter-spacing: -0.2px;
+}
+
+.profile-content {
+  display: flex;
+  gap: 24px;
+}
+
+/* Main Profile Card */
+.profile-card {
+  flex: 1;
+  background: var(--white);
+  border-radius: 8px;
+  padding: 28px;
+  border: 1px solid var(--border);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
+}
+
+.profile-card h2 {
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: var(--text-primary);
+  padding-bottom: 12px;
+  border-bottom: 1px solid var(--border);
+}
+
+/* Form Styles */
+.form-group {
+  margin-bottom: 18px;
+}
+
+.form-group label {
+  display: block;
+  font-size: 13px;
+  font-weight: 600;
+  margin-bottom: 6px;
+  color: var(--text-primary);
+}
+
+.form-group input {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  font-size: 14px;
+  background: var(--white);
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.form-group input:focus {
+  border-color: #e77600;
+  box-shadow: 0 0 0 3px rgba(231, 118, 0, 0.15);
+  outline: none;
+}
+
+.form-group input:disabled {
+  background: #f5f5f5;
+  color: var(--text-secondary);
+  cursor: not-allowed;
+}
+
+/* Address Section */
+#addresses {
+  margin-top: 32px;
+  padding-top: 24px;
+  border-top: 1px solid var(--border);
+}
+
+#addresses h2 {
+  margin-bottom: 12px;
+}
+
+.empty-state {
+  text-align: center;
+  padding: 32px 16px;
+  background: #f9fafb;
+  border-radius: 6px;
+  border: 1px dashed var(--border);
+}
+
+.empty-state p {
+  color: var(--text-secondary);
+  margin: 0;
+}
+
+/* Address List */
+.address-list {
+  display: grid;
+  gap: 14px;
+  margin-bottom: 24px;
+}
+
+.address-card {
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 16px;
+  background: var(--white);
+  transition: box-shadow 0.2s;
+}
+
+.address-card:hover {
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+}
+
+.address-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.address-head strong {
+  font-size: 14px;
+  color: var(--text-primary);
+}
+
+.address-default {
+  margin-left: 8px;
+  font-size: 11px;
+  padding: 3px 10px;
+  border-radius: 999px;
+  background: rgba(34, 197, 94, 0.12);
+  color: #0f5132;
+  border: 1px solid rgba(34, 197, 94, 0.35);
+}
+
+.address-actions {
+  display: flex;
+  gap: 8px;
+}
+
+.address-body {
+  color: var(--text-primary);
+  font-size: 14px;
+  display: grid;
+  gap: 4px;
+}
+
+.address-body div {
+  line-height: 1.4;
+}
+
+/* Address Form */
+.address-form {
+  margin-top: 24px;
+  padding-top: 20px;
+  border-top: 1px solid var(--border);
+}
+
+.address-form .form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+
+.address-form select,
+.address-form input {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  font-size: 14px;
+  background: var(--white);
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.address-form select:focus,
+.address-form input:focus {
+  border-color: #e77600;
+  box-shadow: 0 0 0 3px rgba(231, 118, 0, 0.15);
+  outline: none;
+}
+
+.address-form .form-group {
+  margin-bottom: 16px;
+}
+
+.address-form label {
+  display: block;
+  margin-bottom: 6px;
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+/* Sidebar */
+.profile-sidebar {
+  width: 260px;
+  flex-shrink: 0;
+}
+
+.sidebar-card {
+  background: var(--white);
+  border-radius: 8px;
+  padding: 20px;
+  border: 1px solid var(--border);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
+}
+
+.sidebar-card h3 {
+  font-size: 16px;
+  font-weight: 700;
+  margin-bottom: 14px;
+  color: var(--text-primary);
+}
+
+.account-links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.account-links li {
+  margin-bottom: 10px;
+}
+
+.account-links a {
+  color: var(--blue-link);
+  text-decoration: none;
+  font-size: 14px;
+  display: block;
+  padding: 6px 0;
+  transition: color 0.15s;
+}
+
+.account-links a:hover {
+  color: #c7511f;
+  text-decoration: underline;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .profile-content {
+    flex-direction: column;
+  }
+  
+  .profile-sidebar {
+    width: 100%;
+  }
+  
+  .address-form .form-row {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 600px) {
+  .profile-page {
+    padding: 20px 12px;
+  }
+  
+  .profile-page h1 {
+    font-size: 22px;
+  }
+  
+  .profile-card {
+    padding: 20px;
+  }
+  
+  .address-form .form-row {
+    gap: 0;
+  }
+}
