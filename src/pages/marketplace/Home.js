@@ -67,7 +67,7 @@ const Home = () => {
   const trending = [...safeItems].sort((a, b) => (b.totalReviews || 0) - (a.totalReviews || 0)).slice(0, 8);
 
   useEffect(() => {
-    const apiBase = process.env.REACT_APP_API_URL || 'http://localhost:5000/api';
+    const apiBase = process.env.REACT_APP_API_URL || 'https://backend-93wt.onrender.com/api';
     fetch(`${apiBase}/banners`)
       .then(res => res.json())
       .then(data => {
