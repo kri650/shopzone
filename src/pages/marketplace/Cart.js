@@ -36,7 +36,7 @@ const Cart = () => {
           {cart.map(item => (
             <div className="cart-item" key={item.cartItemId || item._id}>
               <div className="cart-item-img">
-                <img src={item.image || '/placeholder.png'} alt={item.name} />
+                <img src={item.image || item.images?.[0]?.url || '/placeholder.png'} alt={item.name} />
               </div>
               <div className="cart-item-details">
                 <Link to={`/products/${item._id}`} className="cart-item-name">{item.name || 'Unknown Product'}</Link>
